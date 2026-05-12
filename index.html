@@ -24,7 +24,7 @@
     </div>
 </header>
 
-<section class="hero">
+<section class="hero animated-hero">
 
     <div class="hero-content">
 
@@ -65,37 +65,197 @@
     </div>
 
 </section>
+# Advanced Upgrade Guide for Dr. Jagamohan Meher Website
+
+## Features Added
+
+✅ Separate Agriculture Books Section
+✅ Separate Spiritual Books Section
+✅ Search & Filter System
+✅ Downloadable Notes Section
+✅ Animated Homepage Banner
+
+---
+
+# STEP 1 — Replace Existing Book Section
+
+Open:
+
+```html
+index.html
+```
+
+Find old:
+
+```html
+<section id="books"
+```
+
+Delete the entire old books section.
+
+Now paste this NEW section.
+
+---
+
+# NEW BOOKS SECTION
+
+```html
+<section id="books" class="section gray">
+
+<div class="container">
+
+<h2>Published Books</h2>
+
+<input type="text" id="searchInput" placeholder="Search books..." onkeyup="searchBooks()">
+
+<h3 class="category-title">Agriculture & Engineering Books</h3>
+
+<div class="book-grid" id="bookContainer">
+
+<div class="book-card">
+<h3>Farm Machinery & Equipment</h3>
+<p>Practical manual with calculations and field applications.</p>
+<a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">View on Amazon</a>
+</div>
+
+<div class="book-card">
+<h3>Renewable Energy in Agriculture</h3>
+<p>Solar, biomass, biogas and sustainable agricultural energy systems.</p>
+<a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">View on Amazon</a>
+</div>
+
+<div class="book-card">
+<h3>Farm Machinery Calculations</h3>
+<p>Engineering calculations and field evaluation methods.</p>
+<a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">View on Amazon</a>
+</div>
+
+<div class="book-card">
+<h3>Introduction to Forestry</h3>
+<p>Forestry practical manual for students and ICAR preparation.</p>
+<a href="https://www.amazon.com/dp/B0C88QJCYG" target="_blank">View on Amazon</a>
+</div>
+
+</div>
+
+<h3 class="category-title">Spiritual & Mythology Books</h3>
+
+<div class="book-grid">
+
+<div class="book-card">
+<h3>Journeying with Lord Jagannath</h3>
+<p>Spiritual stories and divine experiences.</p>
+<a href="https://www.amazon.com/dp/B0C6W8B67L" target="_blank">View on Amazon</a>
+</div>
+
+<div class="book-card">
+<h3>Krishna's Magical Adventures</h3>
+<p>Stories of wisdom, love and mythology.</p>
+<a href="https://www.amazon.in/Krishnas-Magical-Adventures-Wisdom-Enchantment-ebook/dp/B0C616DMMX" target="_blank">View on Amazon</a>
+</div>
+
+<div class="book-card">
+<h3>Divine Love: Radha's Eternal Journey</h3>
+<p>Exploring divine love and devotion.</p>
+<a href="https://www.amazon.com/Divine-Love-Eternal-Journey-Krishna-ebook/dp/B0CWVGFH8P" target="_blank">View on Amazon</a>
+</div>
+
+<div class="book-card">
+<h3>Nandi: Myths, Legends & Divine Devotion</h3>
+<p>Exploring Lord Shiva traditions and mythology.</p>
+<a href="https://www.amazon.in/Nandi-Myths-Legends-Divine-Devotion-ebook/dp/B0CQ836D1C" target="_blank">View on Amazon</a>
+</div>
 
 <section id="books" class="section gray">
 
-    <div class="container">
+<div class="container">
 
-        <h2>Featured Books</h2>
+<h2>Published Books</h2>
 
-        <div class="book-grid">
+<input type="text" id="searchInput" placeholder="Search books..." onkeyup="searchBooks()">
 
-            <div class="book-card">
-                <h3>Farm Machinery & Equipment</h3>
-                <p>Practical manual with calculations, observations, viva questions, and field applications.</p>
-                <a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">View on Amazon</a>
-            </div>
+<h3 class="category-title">Agriculture & Engineering Books</h3>
 
-            <div class="book-card">
-                <h3>Renewable Energy in Agriculture</h3>
-                <p>Comprehensive practical guide on solar, biogas, biomass, and sustainable energy systems.</p>
-                <a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">View on Amazon</a>
-            </div>
+<div class="book-grid" id="bookContainer">
 
-            <div class="book-card">
-                <h3>Farm Machinery Calculations</h3>
-                <p>Field evaluation methods, formulas, calculations, and practical engineering concepts.</p>
-                <a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">View on Amazon</a>
-            </div>
+<div class="book-card">
+<h3>Farm Machinery & Equipment</h3>
+<p>Practical manual with calculations and field applications.</p>
+<a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">View on Amazon</a>
+</div>
 
-        </div>
+<div class="book-card">
+<h3>Renewable Energy in Agriculture</h3>
+<p>Solar, biomass, biogas and sustainable agricultural energy systems.</p>
+<a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">View on Amazon</a>
+</div>
 
-    </div>
+<div class="book-card">
+<h3>Farm Machinery Calculations</h3>
+<p>Engineering calculations and field evaluation methods.</p>
+<a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">View on Amazon</a>
+</div>
 
+<div class="book-card">
+<h3>Introduction to Forestry</h3>
+<p>Forestry practical manual for students and ICAR preparation.</p>
+<a href="https://www.amazon.com/dp/B0C88QJCYG" target="_blank">View on Amazon</a>
+</div>
+
+</div>
+
+<h3 class="category-title">Spiritual & Mythology Books</h3>
+
+<div class="book-grid">
+
+<div class="book-card">
+<h3>Journeying with Lord Jagannath</h3>
+<p>Spiritual stories and divine experiences.</p>
+<a href="https://www.amazon.com/dp/B0C6W8B67L" target="_blank">View on Amazon</a>
+</div>
+
+<div class="book-card">
+<h3>Krishna's Magical Adventures</h3>
+<p>Stories of wisdom, love and mythology.</p>
+<a href="https://www.amazon.in/Krishnas-Magical-Adventures-Wisdom-Enchantment-ebook/dp/B0C616DMMX" target="_blank">View on Amazon</a>
+</div>
+
+<div class="book-card">
+<h3>Divine Love: Radha's Eternal Journey</h3>
+<p>Exploring divine love and devotion.</p>
+<a href="https://www.amazon.com/Divine-Love-Eternal-Journey-Krishna-ebook/dp/B0CWVGFH8P" target="_blank">View on Amazon</a>
+</section>
+<section class="section">
+
+<div class="container">
+
+<h2>Free Educational Resources</h2>
+
+<div class="book-grid">
+
+<div class="book-card">
+<h3>Farm Machinery Formula Sheet</h3>
+<p>Important agricultural engineering formulas.</p>
+<a href="#">Download PDF</a>
+</div>
+
+<div class="book-card">
+<h3>Field Capacity Calculations</h3>
+<p>Useful practical calculations and solved examples.</p>
+<a href="#">Download PDF</a>
+</div>
+
+<div class="book-card">
+<h3>Precision Farming Notes</h3>
+<p>Modern agricultural technology notes.</p>
+<a href="#">Download PDF</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
 </section>
 
 <section id="blog" class="section">
@@ -153,7 +313,22 @@
     </p>
 
 </footer>
+<script>
+function searchBooks() {
+    let input = document.getElementById('searchInput').value.toLowerCase();
+    let cards = document.getElementsByClassName('book-card');
 
+    for (let i = 0; i < cards.length; i++) {
+        let text = cards[i].innerText.toLowerCase();
+
+        if (text.includes(input)) {
+            cards[i].style.display = 'block';
+        } else {
+            cards[i].style.display = 'none';
+        }
+    }
+}
+</script>
 </body>
 </html>
 <!-- updated website -->
