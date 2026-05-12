@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Study Materials | Dr. Jagamohan Meher</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="modern-header">
+
+<div class="container nav-container">
+
+<h2 class="logo">
+Dr. Jagamohan Meher
+</h2>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="agriculture.html">Agriculture</a>
+<a href="spiritual.html">Spiritual</a>
+<a href="resources.html">Resources</a>
+<a href="blog.html">Blog</a>
+<a href="store.html">Study Materials</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="store-hero">
+
+<div class="container">
+
+<h1>
+Premium Study Materials
+</h1>
+
+<p>
+Download practical notes, solved calculations, viva questions, MCQs and engineering resources.
+</p>
+
+</div>
+
+</section>
+
+<section class="store-section">
+
+<div class="container">
+
+<div class="store-grid">
+
+<div class="store-card">
+
+<h2>
+Field Capacity Formula Notes
+</h2>
+
+<p>
+Solved examples, formulas and practical calculations.
+</p>
+
+</html>
