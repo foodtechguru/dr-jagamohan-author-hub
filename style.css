@@ -482,3 +482,116 @@ transform:translateY(-10px);
 .interest-card h3{
 color:#1b5e20;
 }
+.spiritual-header{
+background:#0b0b0b;
+padding:20px 0;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.spiritual-logo{
+color:#ffd54f;
+}
+
+.spiritual-header nav a{
+color:white;
+}
+
+.spiritual-header nav a:hover{
+color:#ffd54f;
+}
+
+.spiritual-hero{
+padding:120px 0;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url('tirumala.jpg');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+}
+
+.spiritual-hero h1{
+font-size:60px;
+margin-bottom:25px;
+}
+
+.spiritual-hero p{
+font-size:22px;
+max-width:850px;
+margin:auto;
+}
+
+.spiritual-books-section{
+padding:100px 0;
+background:#111;
+}
+
+.spiritual-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+}
+
+.spiritual-card{
+background:#1c1c1c;
+padding:25px;
+border-radius:25px;
+color:white;
+transition:0.4s;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.spiritual-card:hover{
+transform:translateY(-12px);
+}
+
+.spiritual-cover{
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:18px;
+margin-bottom:20px;
+}
+
+.spiritual-card h2{
+margin-bottom:20px;
+color:#ffd54f;
+}
+
+.spiritual-card a{
+display:inline-block;
+margin-top:20px;
+background:#ffd54f;
+color:#111;
+padding:12px 22px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.wisdom-section{
+padding:100px 0;
+background:#f8f5e9;
+text-align:center;
+}
+
+.wisdom-section h2{
+font-size:46px;
+margin-bottom:30px;
+color:#5d4037;
+}
+
+.wisdom-section p{
+max-width:900px;
+margin:auto;
+font-size:20px;
+line-height:1.9;
+}
+
+.spiritual-footer{
+background:#0b0b0b;
+color:white;
+padding:70px 0 30px;
+}
