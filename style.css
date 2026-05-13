@@ -1007,3 +1007,102 @@ margin:auto;
 font-size:20px;
 line-height:1.9;
 }
+.store-main-hero{
+padding:120px 0;
+background:linear-gradient(135deg,#0b3d0b,#1b5e20,#4caf50);
+color:white;
+text-align:center;
+}
+
+.store-main-hero h1{
+font-size:64px;
+margin-bottom:25px;
+}
+
+.store-main-hero p{
+font-size:22px;
+max-width:900px;
+margin:auto;
+}
+
+.store-category{
+padding:100px 0;
+background:white;
+}
+
+.gray-bg{
+background:#f4f7f5;
+}
+
+.spiritual-store-bg{
+background:#111;
+}
+
+.category-title{
+font-size:48px;
+margin-bottom:60px;
+color:#1b5e20;
+text-align:center;
+}
+
+.light-text{
+color:#ffd54f;
+}
+
+.store-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+}
+
+.store-card{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.4s;
+}
+
+.store-card:hover{
+transform:translateY(-10px);
+}
+
+.dark-card{
+background:#1c1c1c;
+color:white;
+}
+
+.store-card h3{
+margin-bottom:20px;
+color:#1b5e20;
+}
+
+.dark-card h3{
+color:#ffd54f;
+}
+
+.resource-label{
+display:inline-block;
+background:#e8f5e9;
+color:#1b5e20;
+padding:8px 18px;
+border-radius:30px;
+margin:20px 0;
+font-weight:600;
+}
+
+.gold{
+background:#ffd54f;
+color:#111;
+}
+
+.store-card a{
+display:inline-block;
+margin-top:20px;
+background:#1b5e20;
+color:white;
+padding:12px 24px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+}
