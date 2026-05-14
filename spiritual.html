@@ -17,6 +17,217 @@
 
 <link rel="stylesheet" href="style.css">
 
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f7f5;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.spiritual-header{
+    background:#0f3d2e;
+    padding:18px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd166;
+}
+
+.spiritual-hero{
+    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.spiritual-hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.spiritual-hero p{
+    font-size:20px;
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.spiritual-books-section{
+    padding:80px 0;
+}
+
+.spiritual-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:40px;
+}
+
+.spiritual-card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.spiritual-card:hover{
+    transform:translateY(-8px);
+}
+
+.spiritual-cover{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+.spiritual-content{
+    padding:28px;
+}
+
+.spiritual-content h2{
+    color:#0f3d2e;
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.spiritual-content p{
+    line-height:1.8;
+    color:#444;
+    margin-bottom:25px;
+}
+
+.spiritual-content a{
+    display:inline-block;
+    background:#0f5132;
+    color:white;
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.spiritual-content a:hover{
+    background:#198754;
+}
+
+.wisdom-section{
+    background:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.wisdom-section h2{
+    color:#0f3d2e;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.wisdom-section p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.9;
+    font-size:18px;
+    color:#444;
+}
+
+.spiritual-footer{
+    background:#0f3d2e;
+    color:white;
+    padding:60px 20px 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+    margin-bottom:30px;
+}
+
+.footer-grid h3{
+    margin-bottom:18px;
+}
+
+.footer-grid ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-grid ul li{
+    margin-bottom:12px;
+}
+
+.footer-grid ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-grid ul li a:hover{
+    color:#ffd166;
+}
+
+.copyright{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.2);
+    padding-top:20px;
+    margin-top:20px;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+.spiritual-hero h1{
+    font-size:36px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
@@ -25,7 +236,7 @@
 
 <div class="container nav-container">
 
-<h2 class="logo spiritual-logo">
+<h2 class="logo">
 Spiritual Literature
 </h2>
 
@@ -60,7 +271,7 @@ Divine Stories & Spiritual Wisdom
 </h1>
 
 <p>
-Exploring mythology, devotion, sacred legends and timeless spiritual teachings.
+Exploring mythology, devotion, sacred legends and timeless spiritual teachings inspired by Indian philosophy and divine traditions.
 </p>
 
 </div>
@@ -73,16 +284,19 @@ Exploring mythology, devotion, sacred legends and timeless spiritual teachings.
 
 <div class="spiritual-grid">
 
+<!-- Tirumala -->
 <div class="spiritual-card">
 
-<img src="tirumala.jpg" class="spiritual-cover">
+<img src="tirumala.png" alt="Divine Legends of Tirumala" class="spiritual-cover">
+
+<div class="spiritual-content">
 
 <h2>
 Divine Legends of Tirumala
 </h2>
 
 <p>
-Sacred stories of Lord Venkateswara and divine devotion.
+Sacred stories of Lord Venkateswara, devotion, miracles and divine traditions associated with Tirumala.
 </p>
 
 <a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">
@@ -91,16 +305,21 @@ View Book
 
 </div>
 
+</div>
+
+<!-- Bhairava -->
 <div class="spiritual-card">
 
-<img src="bhairava.jpg" class="spiritual-cover">
+<img src="bhairava.png" alt="Bhairava" class="spiritual-cover">
+
+<div class="spiritual-content">
 
 <h2>
 Bhairava
 </h2>
 
 <p>
-Mysteries, divine energy and sacred aspects of Lord Shiva.
+Explore the mysteries, divine power and sacred spiritual symbolism of Lord Bhairava.
 </p>
 
 <a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">
@@ -109,16 +328,21 @@ View Book
 
 </div>
 
+</div>
+
+<!-- Narasimha -->
 <div class="spiritual-card">
 
-<img src="narasimha.jpg" class="spiritual-cover">
+<img src="narasimha.png" alt="The Lion Avatar" class="spiritual-cover">
+
+<div class="spiritual-content">
 
 <h2>
 The Lion Avatar
 </h2>
 
 <p>
-The divine protection and power of Lord Narasimha.
+The powerful story of Lord Narasimha and the triumph of righteousness over evil.
 </p>
 
 <a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">
@@ -127,21 +351,28 @@ View Book
 
 </div>
 
+</div>
+
+<!-- Kartikeya -->
 <div class="spiritual-card">
 
-<img src="kartikeya.jpg" class="spiritual-cover">
+<img src="kartikeya.png" alt="Kartikeya" class="spiritual-cover">
+
+<div class="spiritual-content">
 
 <h2>
 Kartikeya
 </h2>
 
 <p>
-The divine warrior and the triumph over darkness.
+The inspiring story of the divine warrior Kartikeya and his spiritual symbolism.
 </p>
 
 <a href="https://www.amazon.com/stores/Jagamohan-Meher/author/B0C851B2G4" target="_blank">
 View Book
 </a>
+
+</div>
 
 </div>
 
@@ -156,13 +387,11 @@ View Book
 <div class="container">
 
 <h2>
-Spiritual Exploration
+Spiritual Exploration & Divine Wisdom
 </h2>
 
 <p>
-These books explore divine stories, sacred teachings,
-mythological wisdom and devotional traditions inspired by
-Indian spirituality and timeless philosophical insights.
+These books explore sacred mythology, spiritual teachings, divine legends and timeless devotional wisdom inspired by Indian spiritual traditions, philosophy and mythology.
 </p>
 
 </div>
@@ -212,7 +441,7 @@ Connect
 </h3>
 
 <p>
-Amazon • LinkedIn • ResearchGate
+Amazon • LinkedIn • ResearchGate • Google Scholar
 </p>
 
 </div>
